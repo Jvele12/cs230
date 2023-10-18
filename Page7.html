@@ -1,0 +1,85 @@
+<html>
+<head>
+<link rel="icon" type="image/png" sizes="64x64" href="https://i.pinimg.com/originals/51/2e/ed/512eedcb8c64629bb7997c8bf1f23aa0.png">
+<link rel="icon" type="image/png" sizes="128x128" href="https://i.pinimg.com/originals/51/2e/ed/512eedcb8c64629bb7997c8bf1f23aa0.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://i.pinimg.com/originals/51/2e/ed/512eedcb8c64629bb7997c8bf1f23aa0.png">
+<style>
+body {
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    
+   }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: pink;
+  padding: 20px;
+}
+
+.flex-container {
+ display:flex; 
+ justify-content : space-between; 
+}
+
+.flex-item {
+ background-color : lightgreen; 
+ width :100px; 
+ height :100px; 
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: -10px;
+    padding-right: -10px;
+    padding-top: -10px;
+    padding-bottom: -10px;
+   }
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to Page 7 "Responsive Web Design"</h2>
+<p>Resize this responsive page to see the effect on any device!</p>
+
+<div class="grid-container">
+  <div class="grid-item">Apple</div>
+  <div class="grid-item">Blueberries</div>
+  <div class="grid-item">Bananas</div>
+  <div class="grid-item">Oranges</div>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item">Books</div>
+  <div class="flex-item">DvDs</div>
+  <div class="flex-item">Games</div>
+  <div class="flex-item">Watches</div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<a href="index.html" class="index-link">Go back to index</a>
+</body>
+</html>
