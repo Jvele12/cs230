@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #FFDAB9;
+                color: #8B4513;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Page 8! - Self Survey!</h1>
+        <h2>Are you all set? When your're done click the button below to log your responses!</h2>
+
+        <form id="myForm" action="#" method="post" style="display: flex; flex-direction: column; gap: 10px;">
+            
+            <input type="text" name="name" placeholder="Enter your name">
+
+            
+            <textarea name="message" rows="5" placeholder="Enter your message"></textarea>
+
+            <p>"What Pet would you prefer to have select an option below!"</p>
+            <select name="What Pet would you prefer to have select an option below!">
+                <option value="option1">Cat</option>
+                <option value="option2">Dog</option>
+                <option value="option3">T-Rex</option>
+            </select>
+
+            
+            <div style="display: flex; gap: 10px;">
+                
+                <div>
+                    <input type="checkbox" id="check1" name="check1" onchange="if(this.checked){alert('You have confirmed!')}">
+                    <label for="check1">Check to confirm!</label>
+                   
+                </div>
+
+                
+                <div>
+                    <input type="radio" id="radio1" name="radio" onchange="if(this.checked){alert('You have pressed the radio button!')}">
+                    <label for="radio1">Radio button!</label>
+                </div>
+            </div>
+
+           
+            <input type="email" name="email" placeholder="Enter your email">
+
+            <p>"Try out the Slider!"</p>
+            <input type="range" min="0" max="100" value="50">
+
+            <p>"Enter the Date and time Manually or Automatically!"</p>
+            <input type="datetime-local" name="datetime">
+
+            
+            <input type="button" onclick="alert('Youve entered sucessfully!'); document.getElementById('myForm').reset();" value="Click Me!">
+        </form>
+    </body>
+    <a href="index.html" class="index-link">Click Here to go back to the Main Page!</a>
+</html>
